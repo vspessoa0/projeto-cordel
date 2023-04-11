@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+:root{
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Iceberg', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    font-family: var(--fonte-destaque);
+    color:  white;
+    text-align: center;
+    padding: 15px;
+}
+
+header > h1{
+    color: white;
+    font: bolder;
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header  a,footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--fonte-destaque);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 5vw;
+}
+
+.normal{
+    background-image: linear-gradient(to right, #ffebcd, #d6ae70);
+}
+
+.normal > p{
+    font-size: 3vw;
+}
+
+section.imagem1{
+    background: black url("imagens/background001.jpg") right center no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 0px 0px 7px black;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.imagem1 > p{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline-block;
+    padding: 5px;
+    font-size: 3vw;
+}
+
+section.imagem2{
+    background: black url("imagens/background002.jpg") right center no-repeat
+    fixed;
+    background-size: cover;
+    box-shadow: inset 0px 0px 7px black;
+    color:  white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.imagem2 > p{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline-block;
+    padding: 5px;
+    font-size: 3vw;
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+}
